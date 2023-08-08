@@ -14,13 +14,13 @@ class Oura extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
-    const BASE_OURA_API_HOSTNAME = 'https://api.ouraring.com';
+    const BASE_OURA_API_HOSTNAME = 'https://cloud.ouraring.com';
 
     const BASE_OURA_API_URL_AUTHORIZE = 'https://cloud.ouraring.com/oauth/authorize';
 
-    const BASE_OURA_API_URL_ACCESS_TOKEN = 'https://api.ouraring.com/oauth/token';
+    const BASE_OURA_API_URL_ACCESS_TOKEN = 'https://cloud.ouraring.com/oauth/token';
 
-    const BASE_OURA_API_URL_REVOKE_TOKEN = 'https://api.ouraring.com/oauth/revoke';
+    const BASE_OURA_API_URL_REVOKE_TOKEN = 'https://cloud.ouraring.com/oauth/revoke';
 
     const URL_RESOURCE_OWNER_DETAILS = 'https://api.ouraring.com/v2/usercollection/personal_info';
 
