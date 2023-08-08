@@ -22,7 +22,7 @@ class Oura extends AbstractProvider
 
     const BASE_OURA_API_URL_REVOKE_TOKEN = 'https://api.ouraring.com/oauth/revoke';
 
-    const URL_RESOURCE_OWNER_DETAILS = 'https://api.ouraring.com/v2/userinfo';
+    const URL_RESOURCE_OWNER_DETAILS = 'https://api.ouraring.com/v2/usercollection/personal_info';
 
     /**
      * @var string
@@ -258,6 +258,6 @@ class Oura extends AbstractProvider
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new WhoopUser($response);
+        return new OuraUser($response);
     }
 }
