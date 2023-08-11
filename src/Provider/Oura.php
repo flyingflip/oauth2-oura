@@ -14,7 +14,7 @@ class Oura extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
-    const BASE_OURA_API_HOSTNAME = 'https://cloud.ouraring.com';
+    const BASE_OURA_API_HOSTNAME = 'https://api.ouraring.com';
 
     const BASE_OURA_API_URL_AUTHORIZE = 'https://cloud.ouraring.com/oauth/authorize';
 
